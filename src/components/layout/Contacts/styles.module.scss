@@ -1,0 +1,56 @@
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0 0;
+}
+
+.contact {
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  transition: all .2s ease-in-out;
+  user-select: none;
+
+  &:hover {
+    background: aquamarine;
+    transition: all .2s ease-in-out;
+
+    .actionButton {
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.gray {
+  background: #9fd1f8;
+  color: black;
+}
+
+.white {
+  background: #ffadad;
+  color: black;
+}
+
+.actionButton {
+  position: absolute;
+  right: -80px;
+  top: 5px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  z-index: 10;
+
+  & > * {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.addButton {
+  margin: 10px 0;
+}
